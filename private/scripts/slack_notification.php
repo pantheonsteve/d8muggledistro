@@ -15,9 +15,6 @@ $defaults = array(
 // See the README.md for instructions on storing secrets.
 $secrets = _get_secrets(array('slack_url'), $defaults);
 
-//POST values
-$post_keys = array_keys($_POST);
-
 // Build an array of fields to be rendered with Slack Attachments as a table
 // attachment-style formatting:
 // https://api.slack.com/docs/attachments
@@ -38,8 +35,8 @@ $fields = array(
     'short' => 'true'
   ),
   array( // Render Name with link to Email from Commit message
-    'title' => 'POST',
-    'value' => $post_keys,
+    'title' => 'Message',
+    'value' => 'Making a new deployment to the American Airlines IR site - SB',
     'short' => 'true'
   ),
   array( // Render workflow phase that the message was sent
