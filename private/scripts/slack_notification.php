@@ -36,7 +36,7 @@ $fields = array(
   ),
   array( // Render Name with link to Email from Commit message
     'title' => 'Message',
-    'value' => 'Making a new deployment to the American Airlines IR site - SB',
+    'value' => 'Changes pushed to AA-IR 05.05.2020 22:25:00',
     'short' => 'true'
   ),
   array( // Render workflow phase that the message was sent
