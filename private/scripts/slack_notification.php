@@ -34,11 +34,6 @@ $fields = array(
     'value' => $_POST['user_email'],
     'short' => 'true'
   ),
-  array( // Render Name with link to Email from Commit message
-    'title' => 'Message',
-    'value' => 'Changes pushed to AA-IR 05.05.2020 22:25:00',
-    'short' => 'true'
-  ),
   array( // Render workflow phase that the message was sent
     'title' => 'Workflow',
     'value' => ucfirst($_POST['stage']) . ' ' . str_replace('_', ' ',  $_POST['wf_type']),
